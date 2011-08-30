@@ -1,3 +1,4 @@
 (defproject OXO "1.0.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :dependencies [[org.clojure/clojure "1.2.1"]])
+  :description "A clojure based noughts and crosses genetic algorithm"
+  :dependencies [[org.clojure/clojure "1.2.1"]]
+  :main OXO.core)
