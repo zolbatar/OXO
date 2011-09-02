@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63cb9128-5acb-4de8-8e2b-f0d048711fb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OXO/core.clj" afterPath="$PROJECT_DIR$/src/OXO/core.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OXO/state.clj" afterPath="$PROJECT_DIR$/src/OXO/state.clj" />
     </list>
@@ -66,7 +65,7 @@
       <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OXO/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="114" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +74,7 @@
       <file leaf-file-name="state.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/OXO/state.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.5051141">
+            <state line="57" column="12" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.4917388">
               <folding />
             </state>
           </provider>
@@ -475,21 +474,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/OXO/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="114" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="52" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/OXO/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/OXO/state.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.5051141">
+        <state line="57" column="12" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.4917388">
           <folding />
         </state>
       </provider>

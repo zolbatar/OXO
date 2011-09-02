@@ -41,16 +41,22 @@
 (def *STATE-MAP* (state-map))
 
 (defn standard-states []
-  (for [x *STATE-MAP*]
-    (let [state (second x)
-          state-90 (rotate-90 state)
-          state-180 (rotate-180 state)
-          state-270 (rotate-270 state)]
-;              (list {:state state :data (State. nil (possible-moves state))}
-;                    {:state state-90 :data (State. state (possible-moves state))}
-;                    {:state state-180 :data (State. state (possible-moves state-180))}
-;                    {:state state-270 :data (State. state (possible-moves state-270))}))))))))
-      {:state state :data (State. nil (possible-moves state))})))
+  (filter #(not (nil? %))
+    (flatten
+      (for [x *STATE-MAP*]
+        (let [state (first x)
+              state-90 (rotate-90 state)
+              state-180 (rotate-180 state)
+              state-270 (rotate-270 state)]
+          ;              (list {:state state :data (State. nil (possible-moves state))}
+          ;                    {:state state-90 :data (State. state (possible-moves state))}
+          ;                    {:state state-180 :data (State. state (possible-moves state-180))}
+          ;                    {:state state-270 :data (State. state (possible-moves state-270))}))))))))
+          (list
+            {:state state :data (State. nil (possible-moves state))}
+            (when (not (contains? *STATE-MAP* state-90)) {:state state-90 :data (State. state (possible-moves state-90))})
+            (when (not (contains? *STATE-MAP* state-180)) {:state state-180 :data (State. state (possible-moves state-180))})
+            (when (not (contains? *STATE-MAP* state-270)) {:state state-270 :data (State. state (possible-moves state-270))})))))))
 
 ;(defn standard-states []
 ;  (apply sorted-map
@@ -82,8 +88,10 @@
   (let [states (standard-states)
         keys (map :state states)
         first-key (first keys)]
-    ))
-;(println states)))
+    (doseq [x states]
+      (println x))
+    (println (class states))
+    states))
 ;(println first-key)
 ;(doseq [x (filter #(= (:state %) first-key) states)]
 ;  (println x))))

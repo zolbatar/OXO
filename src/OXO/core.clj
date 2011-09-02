@@ -5,5 +5,4 @@
 (defn -main [& args]
   (time
     (let [states (create-states)]
-      (println (class states))
       (println (str (count states) " possible game states")))))
